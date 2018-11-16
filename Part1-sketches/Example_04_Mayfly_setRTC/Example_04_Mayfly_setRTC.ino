@@ -96,7 +96,7 @@ void setup()
   //Start Serial for serial monitor
   Serial.begin(57600);
   while (!Serial) ; // wait until Arduino Serial Monitor opens
-  Serial.println("Running sketch: PCsync.ino");
+  Serial.println("Running sketch: Example_04_Mayfly_setRTC.ino");
 }
 
 // This makes the date look all pretty
