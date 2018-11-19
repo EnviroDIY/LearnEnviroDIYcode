@@ -105,19 +105,15 @@ void loop() {
 
 
 
-    if (!status) {
-        display.println("BME280 failed");
-        while (1);
-  }
-  else
+    for (int i=0; i <= 30; i++)
   {
       display.clearDisplay();
       display.setTextSize(2);
       display.setTextColor(WHITE);
       display.setCursor(0,0);
-      display.println("T: "); display.print(bme.readTemperature()); display.println(" C");
-      display.println("H: "); display.print(bme.readHumidity()); display.println(" %");
-      display.println("P: "); display.print(bme.readPressure()); display.println(" Pa");
+      display.print("T: "); display.print(bme.readTemperature()); display.println(" C");
+      display.print("H: "); display.print(bme.readHumidity()); display.println(" %");
+      display.print("P: "); display.print(bme.readPressure()); display.println(" Pa");
       display.display();
 
       delay(delayTime);
