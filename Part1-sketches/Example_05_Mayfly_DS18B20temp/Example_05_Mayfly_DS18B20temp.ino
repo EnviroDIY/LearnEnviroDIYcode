@@ -3,7 +3,7 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 /********************************************************************/
-// Data wire is plugged into pin 2 on the Arduino
+// Data wire is plugged into pin 7 on the Arduino
 #define ONE_WIRE_BUS 7 // For EnviroDIY Mayfly, I am using digital pin 4.
 /********************************************************************/
 // Setup a oneWire instance to communicate with any OneWire devices

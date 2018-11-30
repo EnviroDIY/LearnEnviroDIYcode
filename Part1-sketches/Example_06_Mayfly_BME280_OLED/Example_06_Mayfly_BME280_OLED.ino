@@ -29,7 +29,7 @@
 // #define BME_MOSI 11
 // #define BME_CS 10
 
-uint8_t BMEi2c_addr = 0x76;  // The BME280 can be addressed either as 0x76 or 0x77
+uint8_t BMEi2c_addr = 0x76;  // Address is 0x77 (Adafruit default) or 0x76 (Grove default)
 const int8_t I2CPower = 22;  // Pin to switch power on and off (-1 if unconnected)
 
 // Create an instance of the OLED display
