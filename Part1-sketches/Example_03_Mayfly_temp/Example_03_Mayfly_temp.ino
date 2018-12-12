@@ -18,6 +18,7 @@ https://github.com/SodaqMoja/Sodaq_DS3231
 **************************************************************************/
 
 #include <Arduino.h>
+#include <Wire.h>
 #include "Sodaq_DS3231.h"   // Install this library to interact with the Real Time Clock
 
 int State8 = LOW;
