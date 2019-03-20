@@ -57,8 +57,5 @@ Temporary Items
 lib/readme.txt
 /platformio.ini
 
-# Other
-logger_test/
-YosemitechDO/
-LongTermLogger/
-barometric_correction/
+# VSCode
+.vscode
