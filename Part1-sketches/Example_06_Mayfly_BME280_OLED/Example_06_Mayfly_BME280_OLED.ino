@@ -51,7 +51,7 @@ void setup() {
     pinMode(5, INPUT);
     display.begin(SSD1306_SWITCHCAPVCC, 0x3C, false);  // initialize with the I2C addr 0x3C (for the 128x64)
     display.clearDisplay();
-    display.setTextSize(2);
+    display.setTextSize(1);
     display.setTextColor(WHITE);
     display.setCursor(0,0);
     display.println("Mayfly");
@@ -108,7 +108,7 @@ void loop() {
     for (int i=0; i <= 30; i++)
   {
       display.clearDisplay();
-      display.setTextSize(2);
+      display.setTextSize(1);
       display.setTextColor(WHITE);
       display.setCursor(0,0);
       display.print("T: "); display.print(bme.readTemperature()); display.println(" C");

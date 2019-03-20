@@ -4,7 +4,7 @@
 #include <DallasTemperature.h>
 /********************************************************************/
 // Data wire is plugged into pin 7 on the Arduino
-#define ONE_WIRE_BUS 7 // For EnviroDIY Mayfly, I am using digital pin 4.
+#define ONE_WIRE_BUS 7 // For EnviroDIY Mayfly, I am using digital pin 7.
 /********************************************************************/
 // Setup a oneWire instance to communicate with any OneWire devices
 // (not just Maxim/Dallas temperature ICs)
@@ -19,11 +19,18 @@ DallasTemperature sensors(&oneWire);
 int time_conversion_factor = 1000;
 int delaytime = 5 * time_conversion_factor;
 
+const int8_t switchedPower = 22;  // Pin to switch power on and off (-1 if unconnected)
+
 
 void setup()
 {
+ // Turn on switched power
+ pinMode(switchedPower, OUTPUT);
+ digitalWrite(switchedPower, HIGH);
+ delay(delaytime);
+
  // start serial port
- Serial.begin(115200);
+ Serial.begin(57600);
  Serial.println("DS18B20 One Wire Temperature Demo");
  // Start up the library
  sensors.begin();
