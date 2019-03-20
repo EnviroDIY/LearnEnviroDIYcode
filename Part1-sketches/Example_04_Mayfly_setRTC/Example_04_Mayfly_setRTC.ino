@@ -94,7 +94,7 @@ void syncRTCwithBatch()
 void setup()
 {
   //Start Serial for serial monitor
-  Serial.begin(57600);
+  Serial.begin(115200);
   while (!Serial) ; // wait until Arduino Serial Monitor opens
   Serial.println("Running sketch: Example_04_Mayfly_setRTC.ino");
 }

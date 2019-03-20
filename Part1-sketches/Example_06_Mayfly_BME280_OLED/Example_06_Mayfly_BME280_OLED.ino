@@ -45,7 +45,7 @@ Adafruit_BME280 bme; // I2C
 unsigned long delayTime;
 
 void setup() {
-    Serial.begin(57600);
+    Serial.begin(115200);
     Serial.println(F("BME280 test"));
 
     pinMode(5, INPUT);

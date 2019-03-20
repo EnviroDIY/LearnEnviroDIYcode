@@ -23,7 +23,7 @@ int delaytime = 5 * time_conversion_factor;
 void setup()
 {
  // start serial port
- Serial.begin(9600);
+ Serial.begin(115200);
  Serial.println("DS18B20 One Wire Temperature Demo");
  // Start up the library
  sensors.begin();

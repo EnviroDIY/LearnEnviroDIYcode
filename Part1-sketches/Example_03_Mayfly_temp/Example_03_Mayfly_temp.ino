@@ -30,7 +30,7 @@ void setup ()
     pinMode(8, OUTPUT);
     pinMode(9, OUTPUT);
 
-    Serial.begin(57600);
+    Serial.begin(115200);
     Wire.begin();
     rtc.begin();
 
