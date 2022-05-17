@@ -19,6 +19,7 @@
  *
  *********************************************************************************************** */
 
+#include <Arduino.h>
 #include <Wire.h>  //http://arduino.cc/en/Reference/Wire (included with Arduino IDE)
 #include <Sodaq_DS3231.h> //Sodaq's library for the DS3231: https://github.com/SodaqMoja/Sodaq_DS3231
 

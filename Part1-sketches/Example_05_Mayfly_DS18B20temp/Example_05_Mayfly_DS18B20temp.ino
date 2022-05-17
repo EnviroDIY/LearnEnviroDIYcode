@@ -14,6 +14,7 @@ OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
 /********************************************************************/
 
+#include <Arduino.h>
 
 // define conversion factor for miliseconds to seconds (multiply by 1000)
 int time_conversion_factor = 1000;

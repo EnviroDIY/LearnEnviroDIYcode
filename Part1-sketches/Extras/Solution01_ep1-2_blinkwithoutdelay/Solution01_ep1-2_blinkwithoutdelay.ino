@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 // These variables store the flash pattern
 // and the current state of the LED
 

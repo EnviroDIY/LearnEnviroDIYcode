@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 class Flasher
 {
   // Class Member Variables
